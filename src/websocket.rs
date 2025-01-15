@@ -434,10 +434,10 @@ impl Subscribe {
                 private_channel = true;
                 String::from("/contractMarket/tradeOrders")
             }
-            // WSTopic::TradeOrdersV2 => {
-            //     private_channel = true;
-            //     String::from("/spotMarket/tradeOrdersV2")
-            // }
+            WSTopic::TradeOrdersV2 => {
+                private_channel = true;
+                String::from("/spotMarket/tradeOrdersV2")
+            }
         };
 
         Subscribe {
