@@ -56,7 +56,7 @@ impl Kucoin {
             .timeout(Duration::from_secs(60))
             .build()?;
         let prefix = match environment {
-            KucoinEnv::Live => String::from("https://api.kucoin.com"),
+            KucoinEnv::Live => String::from("https://api-futures.kucoin.com"),
             KucoinEnv::Sandbox => String::from("https://openapi-sandbox.kucoin.com"),
         };
         Ok(Kucoin {
