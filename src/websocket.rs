@@ -432,7 +432,7 @@ impl Subscribe {
             }
             WSTopic::TradeOrders => {
                 private_channel = true;
-                String::from("/spotMarket/tradeOrders")
+                String::from("/contractMarket/tradeOrders")
             }
             WSTopic::TradeOrdersV2 => {
                 private_channel = true;
