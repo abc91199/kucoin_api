@@ -471,15 +471,12 @@ pub struct TradeOpen {
     pub liquidity: String,
     pub margin_mode: String,
     pub r#type: String,
-    pub user_id: String,
-    pub old_size: String,
     pub order_time: i64,
     pub size: String,
     pub filled_size: String,
     #[serde(default)]
     pub price: String,
     #[serde(default)]
-    pub client_oid: String,
     pub remain_size: String,
     pub status: String,
     pub ts: i64,
